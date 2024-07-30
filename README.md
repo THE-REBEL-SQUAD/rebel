@@ -1,90 +1,97 @@
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+### Give a star and Fork the Repo or You can Use this as a Template also.
 
-# 𝐏𝐘𝐑𝐎 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓
+####  Features
+ - Renames very fast .
+ - Permanent Thumbnail support.
+ - Supports Broadcasts.
+ - Set custom caption.
+ - Has a custom Start-up pic.
+ - Force subscribe available.
+ - Supports unlimited renaming at a time.
+ - Developer Service 24x7. 🔥
 
+ ###  Configs 
 
-<p align="center"> 🅡🅔🅟🅞 🅢🅣🅐🅣🅢 </p>
-
-
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=TEAM-PYRO-BOTZ&repo=PYRO-RENAME-BOT&theme=dark)
-
-
-### Sᴀᴍᴩʟᴇ Bᴏᴛ (Official Pyro Rename Bot)
-
-<p align="center">
-🤖 <a href="https://t.me/Pyro_Rename_Bot"><img title="Telegram" src="https://img.shields.io/static/v1?label=PYRO+RENAME&message=BOT&color=blue-green"></a> 🤖
-</p>
-
-
-## Deploy To Koyeb
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[WEBHOOK]=True&env[ADMIN]&env[DB_URL]&env[DB_NAME]=pyro-botz&env[FORCE_SUB]&env[START_PIC]&env[LOG_CHANNEL]=You%20Dont%20Need%20LogChannel%20To%20Remove%20This%20Variable&run_command=python%20bot.py&branch=main&name=pyro-rename) 
-
-## Deploy To Render
-
-◉ Watch Tutorial For Render Deploy <a href="https://graph.org/file/3c0171b4d2d72a2018a18.jpg"><img src="https://img.shields.io/badge/Watch%20Tutorial%20On%20YouTube-red.svg?logo=Youtube"></a>                     
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT)
-
-## Deploy To Railway
-
-<a href="https://graph.org/file/fabd75cd5043d2cfdc13d.jpg"><img src="https://railway.app/button.svg" alt="Deploy"></a>
-
-## Deploy To Heroku
-
-<a href="https://heroku.com/deploy?template=https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"></a>
-
-
-
-## Configs 
-
-* `BOT_TOKEN`  - Get Bot Token From @BotFather
-
+* `BOT_TOKEN`  - Get bot token from @BotFather
 * `API_ID` - From my.telegram.org 
+* `API_HASH` - From my.telegram.org 
+* `ADMIN` - AUTH or bot controllers id's multiple id use space to split 
+* `FORCE_SUB` - Force Subscribe Channel name without@. Enable only if you need strict mode.
+* `DB_URL`  - Mongo Database URL from https://cloud.mongodb.com/
+* `DB_NAME`  - Your database name from mongoDB.
 
-* `API_HASH` - From my.telegram.org
 
-* `WEBHOOK` - If Your Server Is Need Web Service! Value = `True` Else Value = `False`
+### Deploy on VPS
 
-* `ADMIN` - AUTH Or Bot Controllers Id's Multiple Id Use Space To Split 
+ * Clone the Repo.
 
-* `DB_URL`  - Mongo Database URL From https://cloud.mongodb.com
-
-* `DB_NAME`  - Your Database Name From Mongodb. 
-
-* `FORCE_SUB` - Your Force Sub Channel Username Without @
-
-* `LOG_CHANNEL` - Bot Logs Sending Channel. If You Don't Need This To Remove This Variable In Your Server
-
-* `START_PIC` - Start Message Photo. You Don't Need This! Just Skip
-
-## Botfather Commands
 ```
-start - Bot Alive Cheking
-view_thumb - View Thumbnail
-del_thumb - Delete Thumbnail
-set_caption - Set A Custom Caption
-see_caption - See Your Custom Caption
-del_caption - Delete Custom Caption
-restart - To Rrstart The Bot (Admin Only)
-status - Check Bot Status (Admin Only)
-broadcast - Send Message To All Users (Admin Only)
+git clone https://github.com/WebX-Divin/Rename-Bot-V1.0
+```
+ * Move to the Repo Folder in the VPS.
+
+```
+cd Rename-Bot-V1.0
+```
+ * Inside the cloned folder edit config.py and install the pip, by the following command.
+
+```
+apt install python3-pip
 ```
 
-## ❣️Thanks To
+ * Make sure you update your directory once you installed pip
+ ```
+ apt update && upgrade
+ ```
+ 
+ * Install the required modules using the following command.
 
-<a href="https://t.me/lntechnical">
-   <p> lntechnical TG</p>
-  </a>
-<a href="https://youtube.com/c/LNtechnical">
-   <p> lntechnical YT </p>
-  </a>
+```
+pip install -r requirements.txt
+```
 
-## 🤩 INSPIRATION
+ * If you want to run the bot 24x7, then use this command to create a nested virtual environment.
 
-<a href="https://youtube.com/c/MoTech_YT">
-   <p>❣️ MoTech 🔥</p>
-  </a>
+```
+sudo apt install tmux
+```
+
+```
+tmux
+```
+* If you don't use tmux, then you can directly use this command after the requirements.txt is installed in your VPS.
+ 
+```
+python3 bot.py
+```
+
+### Deploy on Render
+ - Star and click on the Use this Template Button.
+ - Set Your Repo as Private.
+ - Add your Environmental Variables in the config.py file.
+ - Go to Render and Create a new web service and turn of Auto Deploy.
+ - Then scroll down and click on the 'Create Web Service' Button.
+ - That's it. You're Done.
 
 
+###  Commands
+`/start` - Check if the bot is running.
 
+`/viewthumb` - To view current thumbnail.
+
+`/delthumb` - To delete current thumbnail.
+
+`/set_caption` - set a custom caption.
+
+`/see_caption` - see your custom caption.
+
+`/del_caption` - delete custom caption.
+
+`/users` - To view list of users, using BOT [FOR ADMINS USE ONLY]
+
+`/broadcast` - Message Broadcast command [FOR ADMINS USE ONLY].
+
+
+#### Join Telegram Channel 
+ - [WebXBots](https://t.me/WebXBots). Bot Updates Channel
+ - Support Group [WebX-Support](https://t.me/Web_X_Support). For Bug report.
